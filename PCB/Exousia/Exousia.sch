@@ -874,4 +874,6 @@ Wire Wire Line
 	9300 1400 9300 1350
 Wire Wire Line
 	9300 1350 9350 1350
+Text Notes 1400 6900 0    50   ~ 0
+https://static5.arrow.com/pdfs2/2019/4/21/17/24/15/973494/ren_/manual/isl95338eval1z_5.jpg\n\nrefreance ? 
 $EndSCHEMATC
