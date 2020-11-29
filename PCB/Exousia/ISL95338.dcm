@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ISL95338
+F https://www.intersil.com/content/dam/Intersil/documents/isl9/isl95338.pdf
+$ENDCMP
+#
 #End Doc Library

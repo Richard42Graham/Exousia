@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ISL95338)(type Legacy)(uri ${KIPRJMOD}/ISL95338.lib)(options "")(descr ""))
+  (lib (name AON7410)(type Legacy)(uri ${KIPRJMOD}/AON7410.lib)(options "")(descr ""))
 )
