@@ -14,28 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x02_Female J1
-U 1 1 5FC12546
-P 1750 1650
-F 0 "J1" H 1642 1325 50  0000 C CNN
-F 1 "IN/out" H 1642 1416 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1750 1650 50  0001 C CNN
-F 3 "~" H 1750 1650 50  0001 C CNN
-	1    1750 1650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5FC12995
-P 13450 1650
-F 0 "J3" H 13478 1626 50  0000 L CNN
-F 1 "in/OUT" H 13478 1535 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 13450 1650 50  0001 C CNN
-F 3 "~" H 13450 1650 50  0001 C CNN
-	1    13450 1650
-	1    0    0    1   
-$EndComp
-$Comp
 L ISL95338:ISL95338 U3
 U 1 1 5FC1989E
 P 7550 3900
@@ -96,7 +74,7 @@ U 1 1 5FC1C124
 P 7650 2050
 F 0 "L1" V 7840 2050 50  0000 C CNN
 F 1 "2uH" V 7749 2050 50  0000 C CNN
-F 2 "" H 7650 2050 50  0001 C CNN
+F 2 "Inductor_SMD:L_6.3x6.3_H3" H 7650 2050 50  0001 C CNN
 F 3 "~" H 7650 2050 50  0001 C CNN
 	1    7650 2050
 	0    -1   -1   0   
@@ -260,12 +238,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0105
 U 1 1 5FC5C5A0
-P 2000 1750
-F 0 "#PWR0105" H 2000 1500 50  0001 C CNN
-F 1 "GND" H 2005 1577 50  0000 C CNN
-F 2 "" H 2000 1750 50  0001 C CNN
-F 3 "" H 2000 1750 50  0001 C CNN
-	1    2000 1750
+P 2000 1850
+F 0 "#PWR0105" H 2000 1600 50  0001 C CNN
+F 1 "GND" H 2005 1677 50  0000 C CNN
+F 2 "" H 2000 1850 50  0001 C CNN
+F 3 "" H 2000 1850 50  0001 C CNN
+	1    2000 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -525,42 +503,6 @@ Wire Wire Line
 	8800 4650 8800 4900
 Wire Wire Line
 	10000 5100 10000 4950
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5FD06A05
-P 9300 4800
-F 0 "TP2" H 9358 4918 50  0000 L CNN
-F 1 "FRWPG" H 9358 4827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 9500 4800 50  0001 C CNN
-F 3 "~" H 9500 4800 50  0001 C CNN
-	1    9300 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 5000 9300 5000
-Wire Wire Line
-	8800 5100 8950 5100
-Wire Wire Line
-	9300 4800 9300 5000
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5FD1FD32
-P 8950 4800
-F 0 "TP1" H 9008 4918 50  0000 L CNN
-F 1 "RVSPG" H 9008 4827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 9150 4800 50  0001 C CNN
-F 3 "~" H 9150 4800 50  0001 C CNN
-	1    8950 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 4800 8950 5100
-Connection ~ 8950 5100
-Connection ~ 9300 5000
-Wire Wire Line
-	9300 5000 9650 5000
-Wire Wire Line
-	8950 5100 10000 5100
 Wire Wire Line
 	8900 5000 8900 4550
 Wire Wire Line
@@ -568,16 +510,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0110
 U 1 1 5FD5060D
-P 13200 1700
-F 0 "#PWR0110" H 13200 1450 50  0001 C CNN
-F 1 "GND" H 13205 1527 50  0000 C CNN
-F 2 "" H 13200 1700 50  0001 C CNN
-F 3 "" H 13200 1700 50  0001 C CNN
-	1    13200 1700
+P 13200 1800
+F 0 "#PWR0110" H 13200 1550 50  0001 C CNN
+F 1 "GND" H 13205 1627 50  0000 C CNN
+F 2 "" H 13200 1800 50  0001 C CNN
+F 3 "" H 13200 1800 50  0001 C CNN
+	1    13200 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13200 1700 13200 1650
 Wire Wire Line
 	13200 1650 13250 1650
 $Comp
@@ -1070,7 +1010,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 2000 3250 2100
 Wire Wire Line
-	1950 1550 2450 1550
+	1950 1550 2000 1550
 Wire Wire Line
 	2450 1550 2450 3900
 Wire Wire Line
@@ -1277,7 +1217,7 @@ L Device:LED D1
 U 1 1 600DA514
 P 3350 8800
 F 0 "D1" V 3389 8682 50  0000 R CNN
-F 1 "LED" V 3298 8682 50  0000 R CNN
+F 1 "FRWPG" V 3298 8682 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 3350 8800 50  0001 C CNN
 F 3 "~" H 3350 8800 50  0001 C CNN
 	1    3350 8800
@@ -1357,7 +1297,7 @@ L Device:LED D3
 U 1 1 601E08AD
 P 5050 8800
 F 0 "D3" V 5089 8682 50  0000 R CNN
-F 1 "LED" V 4998 8682 50  0000 R CNN
+F 1 "FRWPG" V 4998 8682 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 5050 8800 50  0001 C CNN
 F 3 "~" H 5050 8800 50  0001 C CNN
 	1    5050 8800
@@ -1433,7 +1373,7 @@ L Device:LED D4
 U 1 1 601FC1E3
 P 6550 8800
 F 0 "D4" V 6589 8682 50  0000 R CNN
-F 1 "LED" V 6498 8682 50  0000 R CNN
+F 1 "RVSPG" V 6498 8682 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 6550 8800 50  0001 C CNN
 F 3 "~" H 6550 8800 50  0001 C CNN
 	1    6550 8800
@@ -1523,8 +1463,8 @@ L Jumper:SolderJumper_3_Open JP1
 U 1 1 602B4AF9
 P 2400 7900
 F 0 "JP1" H 2400 8105 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 2400 8014 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2400 7900 50  0001 C CNN
+F 1 "IO-Vselect" H 2400 8014 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 2400 7900 50  0001 C CNN
 F 3 "~" H 2400 7900 50  0001 C CNN
 	1    2400 7900
 	1    0    0    -1  
@@ -1642,8 +1582,8 @@ L Jumper:SolderJumper_3_Open JP2
 U 1 1 603B9CBE
 P 4950 4150
 F 0 "JP2" H 4950 4355 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 4950 4264 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4950 4150 50  0001 C CNN
+F 1 "Pin_FRWEN / ADP" H 4950 4264 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 4950 4150 50  0001 C CNN
 F 3 "~" H 4950 4150 50  0001 C CNN
 	1    4950 4150
 	1    0    0    -1  
@@ -1739,8 +1679,8 @@ L Jumper:SolderJumper_3_Open JP3
 U 1 1 604BAB5F
 P 7300 8900
 F 0 "JP3" V 7346 8967 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 7255 8967 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7300 8900 50  0001 C CNN
+F 1 "RVSEN" V 7255 8967 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 7300 8900 50  0001 C CNN
 F 3 "~" H 7300 8900 50  0001 C CNN
 	1    7300 8900
 	0    -1   -1   0   
@@ -1752,8 +1692,8 @@ L Jumper:SolderJumper_3_Open JP4
 U 1 1 604DDC72
 P 8100 8900
 F 0 "JP4" V 8146 8967 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 8055 8967 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8100 8900 50  0001 C CNN
+F 1 "Pin_FRWEN" V 8055 8967 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 8100 8900 50  0001 C CNN
 F 3 "~" H 8100 8900 50  0001 C CNN
 	1    8100 8900
 	0    -1   -1   0   
@@ -1861,7 +1801,7 @@ Connection ~ 9700 1550
 Wire Wire Line
 	11250 1550 12150 1550
 Wire Wire Line
-	12550 1550 13250 1550
+	12550 1550 13200 1550
 Wire Wire Line
 	8700 3650 12150 3650
 Wire Wire Line
@@ -1902,6 +1842,58 @@ Wire Wire Line
 Wire Wire Line
 	4200 3900 2450 3900
 Connection ~ 4200 3900
-Text Notes 1700 10450 0    50   ~ 0
-find foot prints of all passives \n\n
+Text Notes 4150 3150 0    50   ~ 0
+change component values for 12A system, \n- inductor\n- mosfets\n- sense resistors\nchange footprint for IC\nmake footprint for inductor
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5FE213E3
+P 1750 1650
+F 0 "J1" H 1642 1225 50  0000 C CNN
+F 1 "IN/out" H 1642 1316 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1750 1650 50  0001 C CNN
+F 3 "~" H 1750 1650 50  0001 C CNN
+	1    1750 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 1750 2000 1750
+Wire Wire Line
+	2000 1750 2000 1850
+Connection ~ 2000 1750
+Wire Wire Line
+	1950 1450 2000 1450
+Wire Wire Line
+	2000 1450 2000 1550
+Connection ~ 2000 1550
+Wire Wire Line
+	2000 1550 2450 1550
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5FE9219B
+P 13450 1650
+F 0 "J3" H 13342 1225 50  0000 C CNN
+F 1 "in/OUT" H 13342 1316 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13450 1650 50  0001 C CNN
+F 3 "~" H 13450 1650 50  0001 C CNN
+	1    13450 1650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13200 1750 13250 1750
+Wire Wire Line
+	13200 1650 13200 1750
+Wire Wire Line
+	13200 1750 13200 1800
+Connection ~ 13200 1750
+Wire Wire Line
+	13250 1450 13200 1450
+Wire Wire Line
+	13200 1450 13200 1550
+Connection ~ 13200 1550
+Wire Wire Line
+	13200 1550 13250 1550
+Wire Wire Line
+	8800 5100 10000 5100
+Wire Wire Line
+	8900 5000 9650 5000
 $EndSCHEMATC
