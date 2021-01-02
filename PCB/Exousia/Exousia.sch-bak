@@ -19,7 +19,7 @@ U 1 1 5FC1989E
 P 7550 3900
 F 0 "U3" H 7550 3750 50  0000 C CNN
 F 1 "RVSPG" H 7550 3650 50  0000 C CNN
-F 2 "Package_DFN_QFN:TQFN-24-1EP_4x4mm_P0.5mm_EP2.8x2.8mm_PullBack" H 7550 3900 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm" H 7550 3900 50  0001 C CNN
 F 3 "https://www.intersil.com/content/dam/Intersil/documents/isl9/isl95338.pdf" H 7550 3900 50  0001 C CNN
 	1    7550 3900
 	1    0    0    -1  
@@ -73,9 +73,9 @@ L Device:L L1
 U 1 1 5FC1C124
 P 7650 2050
 F 0 "L1" V 7840 2050 50  0000 C CNN
-F 1 "2uH" V 7749 2050 50  0000 C CNN
-F 2 "Inductor_SMD:L_6.3x6.3_H3" H 7650 2050 50  0001 C CNN
-F 3 "~" H 7650 2050 50  0001 C CNN
+F 1 "0.82uH   PIMB063T-R82MS-68" V 7749 2050 50  0000 C CNN
+F 2 "PIMB063T-R82MS-68:PIMB063T-R82MS-68" H 7650 2050 50  0001 C CNN
+F 3 "http://static6.arrow.com/aropdfconversion/786bc0534771d8612672aefcc8d95d20f5becea1/cyntecpimb063t-r47ms-68spec.pdf" H 7650 2050 50  0001 C CNN
 	1    7650 2050
 	0    -1   -1   0   
 $EndComp
@@ -1582,7 +1582,7 @@ L Jumper:SolderJumper_3_Open JP2
 U 1 1 603B9CBE
 P 4950 4150
 F 0 "JP2" H 4950 4355 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 4950 4264 50  0000 C CNN
+F 1 "Pin_FRWEN / ADP" H 4950 4264 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 4950 4150 50  0001 C CNN
 F 3 "~" H 4950 4150 50  0001 C CNN
 	1    4950 4150
